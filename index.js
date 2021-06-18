@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+// they are using implicit binding t ohave the internal function uto use the nestedfunction.
 
 
 
@@ -59,10 +59,12 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(item){
+  function animalNames(animal_name,scientific_name){
      const displayNames = [];
-      zooAnimals.forEach(item.animal_name,item.scientific_name)
-      return displayNames.push(animal_name,scientific_name)
+      zooAnimals.forEach(function(animal_name,scientific_name){
+        return 
+      });
+      
     }
   
 
@@ -73,9 +75,10 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(){
-    const lowercaseName = zooAnimals.map(item)
-    return item.animal_name.toLowerCase();
-
+    const lowerCase = zooAnimals.map(function(animal_name){
+      return lowerCase.toLowerCase()
+    });
+       
     
   }
   
@@ -85,10 +88,13 @@ const zooAnimals = [
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(data){
+    const population = data.filter(function(item){
+      return item.population < 5;
+    });
+    return population
   }
-  
+  console.log (lowPopulationAnimals)
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
